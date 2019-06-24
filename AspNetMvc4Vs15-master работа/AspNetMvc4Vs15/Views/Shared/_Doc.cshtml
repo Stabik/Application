@@ -1,0 +1,40 @@
+﻿@model AspNetMvc4Vs15.Document
+
+<tr>
+    @if (Model.Name.Length > 30)
+    {
+        string a = null;
+        for (int i = 0; i < 30; i++)
+        {
+            a += Model.Name[i];
+        }
+
+        Model.Name = a + "...";
+
+    }
+
+    <td><p>@Model.Name </p></td>
+    @if (Model.Author.Length > 30)
+    {
+        string a = null;
+        for (int i = 0; i < 30; i++)
+        {
+            a += Model.Author[i];
+        }
+
+        Model.Author = a + "...";
+
+    }
+    <td><p>@Model.Author</p></td>
+    <td><p>@Model.Date</p></td>
+    <td><p><a href="/Home/Download/@Model.MyDoc.Id"><img src="~/img_501426.png" /></a></p></td>
+    <td>
+        <p>
+
+            <a href="/Home/Delete/@Model.MyDoc.Id">Удалить</a>
+            <a href="/Home/Edit/@Model.MyDoc.Id">Изменить</a>
+        </p>
+    </td>
+</tr>
+
+
