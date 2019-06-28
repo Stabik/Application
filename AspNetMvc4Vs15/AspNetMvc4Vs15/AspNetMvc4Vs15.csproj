@@ -123,9 +123,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="Login.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="Registration.aspx" />
+    <EmbeddedResource Include="Models\Person.hbm.xml" />
     <Content Include="Scripts\Script.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -135,29 +134,19 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DocumentRepositiry.cs" />
     <Compile Include="HibernateHelper.cs" />
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Document.cs" />
+    <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\MyFile.cs" />
+    <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\RegModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Registration.aspx.cs">
-      <DependentUpon>Registration.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Registration.aspx.designer.cs">
-      <DependentUpon>Registration.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -173,6 +162,8 @@
     <Content Include="Views\Shared\_Searching.cshtml" />
     <Content Include="Views\Shared\_ColumnName.cshtml" />
     <Content Include="Views\Home\_Error.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

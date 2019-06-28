@@ -17,5 +17,6 @@ namespace AspNetMvc4Vs15.Models
             new SchemaUpdate(configuration).Execute(true, true);
             return sessionFactory.OpenSession();
         }
+       
     }
 }

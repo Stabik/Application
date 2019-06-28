@@ -4,7 +4,9 @@
     ViewBag.Title = "Edit";
 }
 
-<h2>Документ №@Model.Id</h2>
+<h2>Документ </h2>
+ @ViewBag.Message
+<br/><br/>
 @using (Html.BeginForm("Edit", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.HiddenFor(m => m.Id)
@@ -12,7 +14,7 @@
     @Html.LabelFor(m => m.Name, "Название Документа")
     <br />
     @Html.EditorFor(m => m.Name)
-    <br/>
+    <br />
 
     <input type="file" id="file1" name="file1" />
     <input type="submit" value="Добавить" />

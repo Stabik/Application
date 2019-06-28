@@ -5,6 +5,9 @@
 }
 
 <h2>Новый документ</h2>
+@ViewBag.Message
+<br/>
+<br/>
 
 @using (Html.BeginForm("Create", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {

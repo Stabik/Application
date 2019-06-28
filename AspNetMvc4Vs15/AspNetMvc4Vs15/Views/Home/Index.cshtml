@@ -1,0 +1,63 @@
+﻿@using AspNetMvc4Vs15
+@model IEnumerable<Document>
+@{ ViewBag.Title = "Список Документов";
+    Layout = null;
+}
+
+<p> <a href="/Account/Login">Выйти из системы</a></p>
+
+
+<br />
+<tr>
+    <td>@Html.Partial("UserLogin")</td>
+</tr>
+<br /><br />
+@Html.Partial("_Searching")
+<h3>Список Документов</h3>
+<br />
+<table style="font-family:Arial;border:1px solid black; width:auto">
+    @Html.Partial("_ColumnName")
+    @foreach (var item in Model)
+    {
+        <tr></tr>
+             if (item.Name.Length > 30)
+                {
+                    string a = null;
+                    for (int i = 0; i < 30; i++)
+                    {
+                        a += item.Name[i];
+                    }
+
+                    item.Name = a + "...";
+
+                }
+
+
+            if (item.MyUser.Name.Length > 30)
+                {
+                    string a = null;
+                    for (int i = 0; i < 30; i++)
+                    {
+                        a += item.MyUser.Name[i];
+                    }
+
+                    item.MyUser.Name = a + "...";
+
+                }
+
+            <td><p>@item.Name </p></td>
+            <td><p>@item.MyUser.Name</p></td>
+            <td><p>@item.Date </p></td>
+            <td><p><a href="/Home/Download/@item.MyDoc.Id"><img src="~/img_501426.png" /></a></p></td>
+            <td>
+                <p>
+
+                    <a href="/Home/Delete/@item.MyDoc.Id">Удалить</a>
+                    <a href="/Home/Edit/@item.MyDoc.Id">Изменить</a>
+                </p>
+            </td>
+
+       
+    }
+
+</table>
