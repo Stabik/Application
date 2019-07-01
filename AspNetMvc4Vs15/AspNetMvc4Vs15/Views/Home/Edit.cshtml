@@ -1,12 +1,10 @@
 ﻿@model AspNetMvc4Vs15.Document
-
 @{
     ViewBag.Title = "Edit";
 }
-
 <h2>Документ </h2>
- @ViewBag.Message
-<br/><br/>
+@ViewBag.Message
+<br /><br />
 @using (Html.BeginForm("Edit", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.HiddenFor(m => m.Id)
