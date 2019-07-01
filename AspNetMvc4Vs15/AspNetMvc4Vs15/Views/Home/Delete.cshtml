@@ -1,16 +1,15 @@
 ﻿@model AspNetMvc4Vs15.Document
 
+
 @{
-    ViewBag.Title = "Delete";
-}
-
+        ViewBag.Title = "Delete";
+    }
 <h2>Удаление Документа</h2>
-
 <dl>
     <dt>Название</dt>
     <dd>@Html.DisplayFor(model => model.Name)</dd>
-    
-  
+
+
 </dl>
 @using (Html.BeginForm())
 {

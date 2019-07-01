@@ -77,7 +77,6 @@
     </Reference>
     <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.40804.0\lib\net40\System.Web.Mvc.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Mvc.resources">
       <HintPath>..\packages\Microsoft.AspNet.Mvc.pt-br.4.0.40804.0\lib\net40\pt-br\System.Web.Mvc.resources.dll</HintPath>
@@ -170,7 +169,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Default.cshtml" />
     <Content Include="Views\Home\Create.cshtml" />
-    <Content Include="Views\Home\Delete.cshtml" />
     <Content Include="Views\Home\Edit.cshtml" />
     <Content Include="Views\Home\UserLogin.cshtml" />
     <Content Include="Views\Shared\_Doc.cshtml" />
@@ -179,6 +177,7 @@
     <Content Include="Views\Home\_Error.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Home\Delete.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
