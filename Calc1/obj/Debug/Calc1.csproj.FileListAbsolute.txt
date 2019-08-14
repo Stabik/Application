@@ -1,0 +1,13 @@
+C:\Users\Фиалка\source\repos\Calc1\Calc1\bin\Debug\Calc1.exe.config
+C:\Users\Фиалка\source\repos\Calc1\Calc1\bin\Debug\Calc1.exe
+C:\Users\Фиалка\source\repos\Calc1\Calc1\bin\Debug\Calc1.pdb
+C:\Users\Фиалка\source\repos\Calc1\Calc1\obj\Debug\Calc1.csprojAssemblyReference.cache
+C:\Users\Фиалка\source\repos\Calc1\Calc1\obj\Debug\Calc1.csproj.CoreCompileInputs.cache
+C:\Users\Фиалка\source\repos\Calc1\Calc1\obj\Debug\Calc1.exe
+C:\Users\Фиалка\source\repos\Calc1\Calc1\obj\Debug\Calc1.pdb
+F:\Prog\Calc1\bin\Debug\Calc1.exe.config
+F:\Prog\Calc1\obj\Debug\Calc1.exe
+F:\Prog\Calc1\obj\Debug\Calc1.pdb
+F:\Prog\Calc1\bin\Debug\Calc1.exe
+F:\Prog\Calc1\bin\Debug\Calc1.pdb
+F:\Prog\Calc1\obj\Debug\Calc1.csprojResolveAssemblyReference.cache
